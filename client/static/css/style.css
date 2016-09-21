@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #010101;
+
+}
+#container{
+	background-image: url('../images/keyboard7cp.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #000; 
+}
+#links{
+	float: right;
+	clear: right;
+	padding: 30px 50px 0 0;
+	margin-bottom: 9%;
+	list-style-type: none;
+}
+#links a{
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 10px;
+	display: block;
+	text-align: right;
+}
+#links a:hover{
+	color: #676767;
+}
+#nav{
+	margin-top: 30px;
+	color: #99ccff;
+	margin-left: 30px;
+	clear: none;
+	float: left;
+	display: flex;
+}
+#nav li {
+	display: inline-block;
+	margin-left: 50px;
+	font-size: 1.2em;
+	opacity: .7;
+}
+#nav li:hover{
+	color: #676767;
+}
+#title{
+	color: white;
+	clear:both;
+	float: center;
+	text-align: center;
+	margin: auto;
+	font-size: 8em;
+	font-family:Georgia, serif;
+}
+#personal_info, #education_info, #aspirations_info{
+	display: none;
+	color: white;
+	margin:5% 10% 0 10%;
+	padding: 35px 25px 55px;
+	clear: both;
+	float: center;
+	border-top: 2px solid #676767;
+	border-bottom: 2px solid #676767;
+	background-color: #000;
+	opacity: .7;
+	font-size: 1.2em;
+	border-radius: 4px;
+	margin-bottom: 50px;
+}
+#personal_info p, #education_info p, #aspirations_info p{
+	padding-bottom: 20px
+}
+#personal_info h3, #education_info h3, #aspirations_info h3{
+	color: #ff1a1a;
+}
+.skillset{
+	color:#ffff1a;
+}
+#nowgoal, #latergoal{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-left: 40px;
+}
+#spacer{
+	clear: both;
+	height: 400px;
+	color: #ffff1a;
+	font-family: arial;
+	text-align: center;
+}
+
+@media (min-width: 1550px){
+	body{
+		font-size: 1.2em;
+	}
+	#links{
+		margin-bottom: 12%;
+	}
+}
+
+@media (max-width: 540px){
+	body{
+		background: #000; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#132639, #295986);
+	}
+	#title{
+		padding-top: 10%;
+		margin-left: 10px;
+		text-align: left;
+		font-size: 3.4em;
+	}
+	.title{
+		display: block;
+	}
+	#nav{
+		display: none;
+	}
+	#links{
+		margin-bottom: 7px;
+		padding: 10px 0 0 0;
+	}
+	#links li{
+		display: inline-block;
+		margin: 0 6px;
+		font-size: .7rem;
+		background-color: #010101;
+	}
+	#links li a{
+		padding: 0;
+	}
+	#personal_info p, #education_info p, #aspirations_info p{
+		display: block;
+		font-size: .85em;
+	}
+	#personal_info , #education_info , #aspirations_info {
+		display: block;
+		margin:2% 2% 0 2%;
+	}
+	#personal_info h3, #education_info h3 , #aspirations_info h3{
+		display: block;
+		font-size: 1em;
+	}
+	#nowgoal{
+		border-bottom: 1px solid #676767;
+	}
+	#spacer{
+		display: none;
+	}
+}
+@media (max-width: 880px) and (min-width:540px){
+
+	body{
+		background: #000; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#132639, #295986);
+	}	
+		#title{
+			font-size: 3.4em;
+			text-align: left;
+			margin-left: 10px;
+		}
+		.title{
+		display: block;
+	}
+	#nav{
+		display: none;
+	}
+	#personal_info , #education_info , #aspirations_info{
+		display: block;
+		margin:3% 4% 0;
+	}
+	#spacer{
+		display: none;
+	}
+}
+
+@media (min-width: 880px) and (max-width: 1080px){
+	body{
+		background: #000; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#132639, #295986);
+	}
+	#title{
+		font-size: 6em;
+		padding: 15px;
+	}
+	#nav{
+		display: none;
+	}
+	#personal_info , #education_info , #aspirations_info{
+		display: block;
+		margin:3% 4% 0;
+	}
+	#spacer{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

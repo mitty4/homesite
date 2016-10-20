@@ -188,7 +188,7 @@ body{
 
 
 
-@media (max-width: 540px){
+@media screen and (max-width: 540px){
 	body{
 		
 	}
@@ -256,7 +256,7 @@ body{
 		display: none;
 	}	
 }
-@media (max-width: 880px) and (min-width:540px){
+@media screen and (max-width: 880px) and (min-width:540px){
 
 	body{
 	}	
@@ -291,7 +291,7 @@ body{
 	}
 }
 
-@media (min-width: 880px) and (max-width: 1080px){
+@media screen and (min-width: 880px) and (max-width: 1080px){
 	body{
 	}
 	#title{
@@ -307,7 +307,7 @@ body{
 		display: block;
 	}
 
-@media (min-width: 1550px){
+@media screen and (min-width: 1550px){
 	body{
 		font-size: 1.2em;
 	}

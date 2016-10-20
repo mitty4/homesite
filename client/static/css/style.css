@@ -185,9 +185,6 @@ body{
 }
 
 
-
-
-
 @media screen and (max-width: 540px){
 	body{
 		
@@ -307,7 +304,9 @@ body{
 		display: block;
 	}
 
-@media screen and (min-width: 1550px){
+}
+@media screen and  (min-width: 1550px){
+>>>>>>> master
 	body{
 		font-size: 1.2em;
 	}

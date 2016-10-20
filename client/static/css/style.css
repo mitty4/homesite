@@ -3,15 +3,20 @@
 	padding: 0;
 }
 body{
-	background-color: #010101;
+	background-color: #dcdcdc;
 
 }
-#container{
+#header{
 	background-image: url('../images/keyboard7cp.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	padding-bottom: 60px;
-	border-bottom: 1px solid #000; 
+	padding-bottom: 16%;
+	border-bottom: 8px solid silver;
+	/*height: 600px;*/
+	/*border-bottom: 8px solid silver;*/
+	/*border-bottom:  4px solid #1560d8;*/
+	/*border-bottom:  4px solid #f4301a;*/
+	/*max-width: 2900px;*/
 }
 #links{
 	float: right;
@@ -31,12 +36,15 @@ body{
 	color: #676767;
 }
 #nav{
-	margin-top: 30px;
+	z-index: 3;
+	position: fixed;
+	padding-top: 40px;
 	color: #99ccff;
-	margin-left: 30px;
+	padding-left: 30px;
 	clear: none;
 	float: left;
 	display: flex;
+
 }
 #nav li {
 	display: inline-block;
@@ -44,41 +52,58 @@ body{
 	font-size: 1.2em;
 	opacity: .7;
 }
+#nav li:first-child{
+	color: #000;
+}
+#nav li{
+	color: #1560d8;
+	color: #000;
+}
 #nav li:hover{
 	color: #676767;
 }
 #title{
-	color: white;
+	background: rgba(153, 205, 255, .4);
+	background: rgba(225, 225, 225, .4);
+	color: #fff;
 	clear:both;
 	float: center;
 	text-align: center;
 	margin: auto;
-	font-size: 8em;
+	font-size: 6em;
 	font-family:Georgia, serif;
+	-webkit-text-stroke: 3px black;
 }
 #personal_info, #education_info, #aspirations_info{
-	display: none;
+	display: block;
 	color: white;
-	margin:5% 10% 0 10%;
+	margin:2% 0 0;
 	padding: 35px 25px 55px;
-	clear: both;
-	float: center;
+	/*clear: both;
+	float: center;*/
 	border-top: 2px solid #676767;
-	border-bottom: 2px solid #676767;
+	border-top: 4px solid #1560d8;
+	border-bottom: 4px solid #1560d8;
+	/*border-top: 4px solid #f4301a;*/
+/*	border-bottom: 2px solid #676767;
+	border-bottom: 4px solid #1560d8;*/
 	background-color: #000;
 	opacity: .7;
 	font-size: 1.2em;
-	border-radius: 4px;
-	margin-bottom: 50px;
+	/*border-radius: 4px;*/
+	/*margin-bottom: 50px;*/
 }
 #personal_info p, #education_info p, #aspirations_info p{
-	padding-bottom: 20px
+	padding-bottom: 20px;
+	display:block;
 }
 #personal_info h3, #education_info h3, #aspirations_info h3{
 	color: #ff1a1a;
+	display:block;
 }
 .skillset{
 	color:#ffff1a;
+	color: #72fcff;
 }
 #nowgoal, #latergoal{
 	display: inline-block;
@@ -88,37 +113,133 @@ body{
 }
 #spacer{
 	clear: both;
-	height: 400px;
-	color: #ffff1a;
-	font-family: arial;
+	/*height: 150px;*/
 	text-align: center;
+	/*padding: 0 16%;*/
+	padding-top: 40px;
+	/*border-top: 8px solid silver;*/
+	/*border-bottom: 2px solid #99ccff;*/
+}
+#spacer p{
+	font-family: Helvetica, arial;
+	font-size: 1.2em;
+}
+.large{
+	font-size: 1.4em;
+}
+.medium{
+	font-size: 1.2em;
+}
+.medium a, .large a{
+	color: #f47d42;
+	color: #f48e3a;
+	color: #d13c17;
+	text-decoration: none;
+}
+.warmth{
+	color: #ff1a1a;
+}
+.vertical-txt-mid{
+	/*float: ;*/
+	padding: 0 18%;
+}
+.vertical-txt-right{
+	display: none;
+	font-size: 2.4em;
+	vertical-align: top;
+	margin-right: 2%;
+	transform: rotate(90deg);
+	float: right;
+	margin-top: 100px;
+	color: #ff1a1a;
+	-webkit-text-stroke: 1px #f9aa0c;
+}
+.vertical-txt-left{
+	display: none;
+	font-size: 2.4em;
+	transform: rotate(270deg);
+	margin-left: 2%;
+	float: left;
+	margin-top: 100px;
+	color: #ff1a1a;
+	-webkit-text-stroke: 1px #f9aa0c;
+}
+.video:first-child{
+	border-top: none;
+}
+.video{
+	border-top: 2px solid #1560d8;
+	height: 400px;
+}
+/*#triangle-topleft {
+	width: 50%;
+	height: 0;
+	border-top: 90px solid red;
+	border-right: 500px solid transparent;
+}*/
+#triangle-topleft-1 {
+	z-index: 2;
+	position: fixed;
+	width: 4px;
+	height: 0;
+	border-top: 100px solid #99ccff;
+	border-top: 100px solid #edeeed;
+	border-right: 500px solid transparent;
+	border-left: 100px solid transparent;
+}
+#triangle-topleft{
+	z-index: 1;
+	position: fixed;
+	width: 4px;
+	height: 0;
+	border-top: 100px solid #2935b5;
+	border-top: 100px solid #99ccff;
+	border-right: 360px solid transparent;
+	border-left: 300px solid transparent;
+}
+#footer p{
+	text-align: center;
+	border-top: 2px solid silver;
+	padding: 10px 0 20px;
+	color: #545454;
 }
 
-@media (min-width: 1550px){
-	body{
-		font-size: 1.2em;
-	}
-	#links{
-		margin-bottom: 12%;
-	}
-}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 540px){
 	body{
-		background: #000; /* For browsers that do not support gradients */
-	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#132639, #295986);
+		
+	}
+	#header{
+		/*height: 200px;*/
+		/*padding-bottom: 20%;*/
+		padding-bottom: 0;
 	}
 	#title{
-		padding-top: 10%;
+		padding-top: 4%;
 		margin-left: 10px;
 		text-align: left;
 		font-size: 3.4em;
+		padding-bottom: 0;
 	}
 	.title{
 		display: block;
+	}
+	#title{
+		background: none;
+		-webkit-text-stroke: 2px #dcdcdc;
+	}
+	#triangle-topleft {
+		display: none;
 	}
 	#nav{
 		display: none;
@@ -142,7 +263,8 @@ body{
 	}
 	#personal_info , #education_info , #aspirations_info {
 		display: block;
-		margin:2% 2% 0 2%;
+		margin:4% 0;
+		border-bottom: none;
 	}
 	#personal_info h3, #education_info h3 , #aspirations_info h3{
 		display: block;
@@ -152,60 +274,83 @@ body{
 		border-bottom: 1px solid #676767;
 	}
 	#spacer{
-		display: none;
+		padding: 0;
+		/*height: 200px;*/
+		font-size: .8em;
+		/*margin: 0 1%;*/
+		padding-top: 10px; 
 	}
+	.vertical-txt-mid{
+		padding: 0 8%;
+	}	
+	#triangle-topleft-1, #triangle-topleft{
+		display: none;
+	}	
 }
 @media (max-width: 880px) and (min-width:540px){
 
 	body{
-		background: #000; /* For browsers that do not support gradients */
-	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#132639, #295986);
 	}	
+	#header{
+		padding-bottom: 0;
+	}
 		#title{
-			font-size: 3.4em;
-			text-align: left;
-			margin-left: 10px;
+			font-size: 4.4em;
+			/*text-align: left;*/
+			padding-left: 10px;
+			padding-bottom: 0;
 		}
 		.title{
-		display: block;
+		/*display: block;*/
 	}
 	#nav{
 		display: none;
 	}
+	#triangle-topleft, #triangle-topleft-1 {
+		display: none;
+	}
 	#personal_info , #education_info , #aspirations_info{
 		display: block;
-		margin:3% 4% 0;
+		border-bottom: none;
+		/*margin:3% 0 0;*/
 	}
 	#spacer{
-		display: none;
+		/*display: none;*/
 	}
 }
 
 @media (min-width: 880px) and (max-width: 1080px){
 	body{
-		background: #000; /* For browsers that do not support gradients */
-	    background: -webkit-linear-gradient(#132639, #295986); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#132639, #295986); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#132639, #295986); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#132639, #295986);
 	}
 	#title{
-		font-size: 6em;
 		padding: 15px;
+		/*-webkit-text-stroke: 2px #dcdcdc;*/
 	}
+	/*.title{
+		font-size: 3em;
+	}*/
 	#nav{
-		display: none;
+		/*display: ;*/
 	}
 	#personal_info , #education_info , #aspirations_info{
 		display: block;
-		margin:3% 4% 0;
+		margin:3% 0 0;
+	}
+	#triangle-topleft, #triangle-topleft-1 {
+		/*display: none;*/
 	}
 	#spacer{
-		display: none;
+		display: block;
 	}
+
+@media (min-width: 1550px){
+	body{
+		font-size: 1.2em;
+	}
+	#links{
+		margin-bottom: 12%;
+	}
+}
 }
 
 

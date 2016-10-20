@@ -12,11 +12,6 @@ body{
 	background-size: 100% auto;
 	padding-bottom: 16%;
 	border-bottom: 8px solid silver;
-	/*height: 600px;*/
-	/*border-bottom: 8px solid silver;*/
-	/*border-bottom:  4px solid #1560d8;*/
-	/*border-bottom:  4px solid #f4301a;*/
-	/*max-width: 2900px;*/
 }
 #links{
 	float: right;
@@ -79,19 +74,12 @@ body{
 	color: white;
 	margin:2% 0 0;
 	padding: 35px 25px 55px;
-	/*clear: both;
-	float: center;*/
 	border-top: 2px solid #676767;
 	border-top: 4px solid #1560d8;
 	border-bottom: 4px solid #1560d8;
-	/*border-top: 4px solid #f4301a;*/
-/*	border-bottom: 2px solid #676767;
-	border-bottom: 4px solid #1560d8;*/
 	background-color: #000;
 	opacity: .7;
 	font-size: 1.2em;
-	/*border-radius: 4px;*/
-	/*margin-bottom: 50px;*/
 }
 #personal_info p, #education_info p, #aspirations_info p{
 	padding-bottom: 20px;
@@ -113,12 +101,8 @@ body{
 }
 #spacer{
 	clear: both;
-	/*height: 150px;*/
 	text-align: center;
-	/*padding: 0 16%;*/
-	padding-top: 40px;
-	/*border-top: 8px solid silver;*/
-	/*border-bottom: 2px solid #99ccff;*/
+	padding: 10px 0 20px;
 }
 #spacer p{
 	font-family: Helvetica, arial;
@@ -140,7 +124,6 @@ body{
 	color: #ff1a1a;
 }
 .vertical-txt-mid{
-	/*float: ;*/
 	padding: 0 18%;
 }
 .vertical-txt-right{
@@ -164,19 +147,15 @@ body{
 	color: #ff1a1a;
 	-webkit-text-stroke: 1px #f9aa0c;
 }
-.video:first-child{
-	border-top: none;
-}
+
 .video{
-	border-top: 2px solid #1560d8;
+	border-bottom: 2px solid #1560d8;
 	height: 400px;
 }
-/*#triangle-topleft {
-	width: 50%;
-	height: 0;
-	border-top: 90px solid red;
-	border-right: 500px solid transparent;
-}*/
+.video:last-child{
+	border-bottom: 2px solid #434343;
+
+}
 #triangle-topleft-1 {
 	z-index: 2;
 	position: fixed;
@@ -201,15 +180,9 @@ body{
 	text-align: center;
 	border-top: 2px solid silver;
 	padding: 10px 0 20px;
-	color: #545454;
+	color: #ababab;
+	background-color: #434343;
 }
-
-
-
-
-
-
-
 
 
 
@@ -220,12 +193,10 @@ body{
 		
 	}
 	#header{
-		/*height: 200px;*/
-		/*padding-bottom: 20%;*/
 		padding-bottom: 0;
 	}
 	#title{
-		padding-top: 4%;
+		padding-top: 16%;
 		margin-left: 10px;
 		text-align: left;
 		font-size: 3.4em;
@@ -242,20 +213,23 @@ body{
 		display: none;
 	}
 	#nav{
-		display: none;
+		padding: 5px;
+		margin-bottom: 15px;
+	}
+	#nav li {
+		font-size: 1em;
+		border-radius: 4px;
+		background-color: #edeeed;
+		color: #000;
+		margin: 0 1px ;
+		padding: 0 15px;
+		opacity:1;
+
 	}
 	#links{
 		margin-bottom: 7px;
 		padding: 10px 0 0 0;
-	}
-	#links li{
-		display: inline-block;
-		margin: 0 6px;
-		font-size: .7rem;
-		background-color: #010101;
-	}
-	#links li a{
-		padding: 0;
+		display: none;
 	}
 	#personal_info p, #education_info p, #aspirations_info p{
 		display: block;
@@ -264,7 +238,6 @@ body{
 	#personal_info , #education_info , #aspirations_info {
 		display: block;
 		margin:4% 0;
-		border-bottom: none;
 	}
 	#personal_info h3, #education_info h3 , #aspirations_info h3{
 		display: block;
@@ -274,11 +247,7 @@ body{
 		border-bottom: 1px solid #676767;
 	}
 	#spacer{
-		padding: 0;
-		/*height: 200px;*/
 		font-size: .8em;
-		/*margin: 0 1%;*/
-		padding-top: 10px; 
 	}
 	.vertical-txt-mid{
 		padding: 0 8%;
@@ -294,28 +263,31 @@ body{
 	#header{
 		padding-bottom: 0;
 	}
-		#title{
-			font-size: 4.4em;
-			/*text-align: left;*/
-			padding-left: 10px;
-			padding-bottom: 0;
-		}
-		.title{
-		/*display: block;*/
+	#title{
+		font-size: 4.4em;
+		padding-left: 10px;
+		padding-bottom: 0;
+	}
+	.title{
 	}
 	#nav{
-		display: none;
+		padding: 5px;
+		margin: 0;
+	}
+	#nav li {
+		border-radius: 4px;
+		background-color: #edeeed;
+		color: #000;
+		margin: 0 1px ;
+		padding: 0 15px;
+		opacity:1;
+
 	}
 	#triangle-topleft, #triangle-topleft-1 {
 		display: none;
 	}
 	#personal_info , #education_info , #aspirations_info{
 		display: block;
-		border-bottom: none;
-		/*margin:3% 0 0;*/
-	}
-	#spacer{
-		/*display: none;*/
 	}
 }
 
@@ -324,20 +296,12 @@ body{
 	}
 	#title{
 		padding: 15px;
-		/*-webkit-text-stroke: 2px #dcdcdc;*/
-	}
-	/*.title{
-		font-size: 3em;
-	}*/
-	#nav{
-		/*display: ;*/
 	}
 	#personal_info , #education_info , #aspirations_info{
 		display: block;
 		margin:3% 0 0;
 	}
 	#triangle-topleft, #triangle-topleft-1 {
-		/*display: none;*/
 	}
 	#spacer{
 		display: block;

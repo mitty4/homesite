@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #dcdcdc;
+
+}
+#header{
+	background-image: url('../images/keyboard7redv2.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 16%;
+	border-bottom: 8px solid silver;
+	border-bottom: 8px solid #e5d8b7;
+	/*border-bottom: 4px solid #b60020;*/
+}
+#links{
+	float: right;
+	clear: right;
+	padding: 30px 50px 0 0;
+	margin-bottom: 9%;
+	list-style-type: none;
+}
+#links a{
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 10px;
+	display: block;
+	text-align: right;
+}
+#links a:hover{
+	color: #676767;
+}
+#nav{
+	z-index: 3;
+	position: fixed;
+	padding-top: 40px;
+	color: #99ccff;
+	padding-left: 30px;
+	clear: none;
+	float: left;
+	display: flex;
+
+}
+#nav li {
+	display: inline-block;
+	margin-left: 50px;
+	font-size: 1.2em;
+	opacity: .7;
+}
+#nav li:first-child{
+	color: #1560d8;
+	color: #000;
+}
+#nav li{
+	color: #1560d8;
+	color: #000;
+}
+#nav li:hover{
+	color: #676767;
+}
+#title{
+	background: rgba(153, 205, 255, .4);
+	background: rgba(225, 225, 225, .4);
+	/*background: rgba(188, 33, 1, .4);*/
+	/*background: rgba(255, 59, 33, .5);*/
+	background: rgba(247, 182, 174, 0.5);
+	background: rgba(173, 143, 143, 0.5);
+	background: rgba(239, 175, 175, 0.5);
+	color: #fff;
+	clear:both;
+	float: center;
+	text-align: center;
+	margin: auto;
+	font-size: 6em;
+	font-family:Georgia, serif;
+	-webkit-text-stroke: 3px black;
+}
+#personal_info, #education_info, #aspirations_info{
+	display: block;
+	color: white;
+	margin:2% 0 0;
+	padding: 35px 25px 55px;
+	border-top: 2px solid #676767;
+	border-top: 4px solid #b60020;
+	/*border-top: 4px solid #e5d8b7;*/
+	border-bottom: 4px solid #1560d8;
+	border-bottom: 4px solid #b60020;
+	background-color: #000;
+	opacity: .7;
+	font-size: 1.2em;
+}
+#personal_info p, #education_info p, #aspirations_info p{
+	padding-bottom: 20px;
+	display:block;
+}
+#personal_info h3, #education_info h3, #aspirations_info h3{
+	color: #ff1a1a;
+	display:block;
+}
+.skillset{
+	color:#ffff1a;
+	color: #72fcff;
+}
+#nowgoal, #latergoal{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-left: 40px;
+}
+
+/* display none on spacer */
+#spacer{
+	/*display: none;*/
+	clear: both;
+	text-align: center;
+	padding: 10px 0 20px;
+	/*border-bottom: 1px solid #000;*/
+}
+#spacer p{
+	font-family: Helvetica, arial;
+	font-size: 1.2em;
+}
+.large{
+	font-size: 1.4em;
+}
+.medium{
+	font-size: 1.2em;
+}
+.medium a, .large a{
+	color: #f47d42;
+	color: #f48e3a;
+	color: #d13c17;
+	text-decoration: none;
+}
+.warmth{
+	color: #ff1a1a;
+}
+.vertical-txt-mid{
+	padding: 0 18%;
+}
+.vertical-txt-right{
+	display: none;
+	font-size: 2.4em;
+	vertical-align: top;
+	margin-right: 2%;
+	transform: rotate(90deg);
+	float: right;
+	margin-top: 100px;
+	color: #ff1a1a;
+	-webkit-text-stroke: 1px #f9aa0c;
+}
+.vertical-txt-left{
+	display: none;
+	font-size: 2.4em;
+	transform: rotate(270deg);
+	margin-left: 2%;
+	float: left;
+	margin-top: 100px;
+	color: #ff1a1a;
+	-webkit-text-stroke: 1px #f9aa0c;
+}
+
+.video{
+	border-bottom: 2px solid #1560d8;
+	border-bottom: 2px solid #991515;
+	height: 400px;
+}
+.video:last-child{
+	border-bottom: 2px solid #434343;
+
+}
+#triangle-topleft-1 {
+	z-index: 2;
+	position: fixed;
+	width: 4px;
+	height: 0;
+	border-top: 100px solid #99ccff;
+	border-top: 100px solid #edeeed;
+	border-top: 100px solid #991515;
+	border-top: 100px solid #e5d8b7;
+	border-top: 100px solid #fff4d7;
+	border-top: 100px solid #ffdb7c;
+	border-right: 500px solid transparent;
+	border-left: 100px solid transparent;
+}
+#triangle-topleft{
+	z-index: 1;
+	position: fixed;
+	width: 4px;
+	height: 0;
+	border-top: 100px solid #2935b5;
+	border-top: 100px solid #b57b26;
+	border-top: 100px solid #c2693a;
+	border-top: 100px solid #bcbcbc;
+	border-top: 100px solid #99ccff;
+	border-top: 100px solid #e5d8b7;
+	border-top: 100px solid #991515;
+	border-right: 360px solid transparent;
+	border-left: 300px solid transparent;
+}
+#footer p{
+	text-align: center;
+	border-top: 2px solid silver;
+	padding: 10px 0 20px;
+	color: #ababab;
+	background-color: #434343;
+}
+
+
+@media screen and (max-width: 540px){
+	body{
+		
+	}
+	#header{
+		padding-bottom: 0;
+	}
+	#title{
+		padding-top: 16%;
+		margin-left: 10px;
+		text-align: left;
+		font-size: 3.4em;
+		padding-bottom: 0;
+	}
+	.title{
+		display: block;
+	}
+	#title{
+		background: none;
+		-webkit-text-stroke: 2px #dcdcdc;
+	}
+	#triangle-topleft {
+		display: none;
+	}
+	#nav{
+		padding: 5px;
+		margin-bottom: 15px;
+	}
+	#nav li {
+		font-size: 1em;
+		border-radius: 4px;
+		background-color: #edeeed;
+		color: #000;
+		margin: 0 1px ;
+		padding: 0 15px;
+		opacity:1;
+
+	}
+	#links{
+		margin-bottom: 7px;
+		padding: 10px 0 0 0;
+		display: none;
+	}
+	#personal_info p, #education_info p, #aspirations_info p{
+		display: block;
+		font-size: .85em;
+	}
+	#personal_info , #education_info , #aspirations_info {
+		display: block;
+		margin:4% 0;
+	}
+	#personal_info h3, #education_info h3 , #aspirations_info h3{
+		display: block;
+		font-size: 1em;
+	}
+	#nowgoal{
+		border-bottom: 1px solid #676767;
+	}
+	#spacer{
+		font-size: .8em;
+	}
+	.vertical-txt-mid{
+		padding: 0 8%;
+	}	
+	#triangle-topleft-1, #triangle-topleft{
+		display: none;
+	}	
+}
+@media screen and (max-width: 880px) and (min-width:540px){
+
+	body{
+	}	
+	#header{
+		padding-bottom: 0;
+	}
+	#title{
+		font-size: 4.4em;
+		padding-left: 10px;
+		padding-bottom: 0;
+	}
+	.title{
+	}
+	#nav{
+		padding: 5px;
+		margin: 0;
+	}
+	#nav li {
+		border-radius: 4px;
+		background-color: #edeeed;
+		color: #000;
+		margin: 0 1px ;
+		padding: 0 15px;
+		opacity:1;
+
+	}
+	#triangle-topleft, #triangle-topleft-1 {
+		display: none;
+	}
+	#personal_info , #education_info , #aspirations_info{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 880px) and (max-width: 1080px){
+	body{
+	}
+	#title{
+		padding: 15px;
+	}
+	#personal_info , #education_info , #aspirations_info{
+		display: block;
+		margin:3% 0 0;
+	}
+	#triangle-topleft, #triangle-topleft-1 {
+	}
+	#spacer{
+		display: block;
+	}
+
+}
+@media screen and  (min-width: 1550px){
+>>>>>>> master
+	body{
+		font-size: 1.2em;
+	}
+	#links{
+		margin-bottom: 12%;
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

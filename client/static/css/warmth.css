@@ -7,12 +7,13 @@ body{
 
 }
 #header{
-	background-image: url('../images/keyboard7redv3.png');
+	background-image: url('../images/keyboard7redv7.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	padding-bottom: 16%;
 	border-bottom: 8px solid silver;
 	border-bottom: 8px solid #e5d8b7;
+	border-bottom: 8px solid silver;
 	/*border-bottom: 4px solid #b60020;*/
 }
 #links{
@@ -68,6 +69,7 @@ body{
 	background: rgba(247, 182, 174, 0.5);
 	background: rgba(173, 143, 143, 0.5);
 	background: rgba(239, 175, 175, 0.5);
+	background: rgba(225, 225, 225, .4);
 	color: #fff;
 	clear:both;
 	float: center;
@@ -182,6 +184,7 @@ body{
 	border-top: 100px solid #e5d8b7;
 	border-top: 100px solid #fff4d7;
 	border-top: 100px solid #ffdb7c;
+	border-top: 100px solid #edeeed;
 	border-right: 500px solid transparent;
 	border-left: 100px solid transparent;
 }

@@ -132,17 +132,22 @@ $(document).ready(function(){
 	console.log(typed[0])
 
 
+var showWarmth = function(){
+	setTimeout(function(){$('.warmth a').css('display','block')}, 14500)
+  
+}
 
-
-	var showText = function (target, message, index, interval) {   
+	var showText = function (target, message, index, interval, callback) {   
 	  if (index < message.length) {
 	    $(target).append(message[index++]);
     setTimeout(function () { showText(target, message, index, interval); }, interval);
   }
+
 }
+	
 
-	showText('.vertical-txt-mid p', typed, 0, 75)
-
+	showText('#spacer p', typed, 0, 75, showWarmth)
+	showWarmth()
 	// $('.vertical-txt-mid p').text('')
 
 	// var t = function(letter){

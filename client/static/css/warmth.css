@@ -123,6 +123,7 @@ body{
 	border-top: 2px solid #676767;
 	border-top: 4px solid #b60020;
 	border-top: 2px solid #333;
+	border-top: 2px solid #630f0f;
 	/*border-top: 4px solid #c09852;*/
 	/*border-top: 4px solid #e5d8b7;*/
 	border-bottom: 4px solid #1560d8;
@@ -309,6 +310,7 @@ body{
 #ruby{
 	background-image: url('../images/mouse.png');
 	background-size: 25%;
+	border-top: 2px solid #630f0f;
 }
 #ruby>.right>p{
 	/*background-color: #edeeed;*/

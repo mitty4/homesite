@@ -77,7 +77,7 @@ var showinfo = function(){
 		$('#education_info, #personal_info').hide();
 		$('#aspirations_info').css('display','block');
 
-			$('#education, #personal, #aspirations').mouseenter(function(){
+			$('#education, #personal, #aspirations, .python, .ruby, .javascript').mouseenter(function(){
 				$(this).css('cursor','pointer')
 			});
 			$('#personal').click(function(){
@@ -102,6 +102,18 @@ var showinfo = function(){
 				$('html body').animate({
 					scrollTop: $('#aspirations_info').offset().top -125},1000)
 			});
+			$('.python').click(function(){
+				$('html body').animate({
+					scrollTop: $('#python').offset().top -100}, 1000)
+			})
+			$('.ruby').click(function(){
+				$('html body').animate({
+					scrollTop: $('#ruby').offset().top -100}, 1000)
+			})
+			$('.javascript').click(function(){
+				$('html body').animate({
+					scrollTop: $('#mean').offset().top -100}, 1000)
+			})
 	// }else if(window.innerWidth<880){
 	// 	$('#education_info, #aspirations_info, #personal_info').show()
 	// }	
@@ -114,6 +126,38 @@ $(document).ready(function(){
 		// readme();
 	})	
 	showinfo();
+
+
+	var typed = 'Design, when done deliberately, conducts a technical symphony communicating effectively without words, which is why I never develop without the emotion evoking power of colors.'
+	console.log(typed[0])
+
+
+
+
+	var showText = function (target, message, index, interval) {   
+	  if (index < message.length) {
+	    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
+
+	showText('.vertical-txt-mid p', typed, 0, 75)
+
+	// $('.vertical-txt-mid p').text('')
+
+	// var t = function(letter){
+	// 	setTimeout(function){
+	// 		$('.vertical-txt-mid p').append(letter)	
+	// 	}
+	// }	
+	// for (var i = 0; i<typed.length; i++){
+	// 	setTimeout(function(){
+	// 		t('h')
+	// 	},1000)
+			
+	// }
+
+
 	// readme();
 	var arr = $('#others').html().split("");
 	var temp = "";

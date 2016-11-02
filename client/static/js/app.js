@@ -164,11 +164,11 @@ var showWarmth = function(){
 
 
 	// readme();
-	var arr = $('#others').html().split("");
-	var temp = "";
-	for(var i =0;i<arr.length;i++){
-		temp+='<span style="color:'+random_color()+'">'+arr[i]+'</span>';
-	};
+	// var arr = $('#others').html().split("");
+	// var temp = "";
+	// for(var i =0;i<arr.length;i++){
+	// 	temp+='<span style="color:'+random_color()+'">'+arr[i]+'</span>';
+	// };
 	$('#others').html(temp);
 	$('#others').click(function(){
 		alert("More Projects Coming Soon")

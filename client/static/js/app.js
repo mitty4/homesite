@@ -127,7 +127,7 @@ $(document).ready(function(){
 	})	
 	showinfo();
 
-
+	var about = "Mitty Labs showcases three of Mitchell's full-stack applications, which are in video format below. The code for each app can be found on Github through the links provided."
 	var typed = 'Design, when done deliberately, conducts a technical symphony communicating effectively without words, which is why I never develop without the emotion evoking power of colors.'
 	console.log(typed[0])
 
@@ -146,8 +146,8 @@ var showWarmth = function(){
 }
 	
 
-	showText('#spacer p', typed, 0, 75, showWarmth)
-	showWarmth()
+	showText('#spacer p', about, 0, 75, showWarmth)
+	// showWarmth()
 	// $('.vertical-txt-mid p').text('')
 
 	// var t = function(letter){
@@ -169,7 +169,7 @@ var showWarmth = function(){
 	// for(var i =0;i<arr.length;i++){
 	// 	temp+='<span style="color:'+random_color()+'">'+arr[i]+'</span>';
 	// };
-	$('#others').html(temp);
+
 	$('#others').click(function(){
 		alert("More Projects Coming Soon")
 	});

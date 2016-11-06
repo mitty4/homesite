@@ -56,10 +56,7 @@ var typed = 'Design, when done deliberately, conducts a technical symphony commu
 
 
 $(document).ready(function(){
-
-	// $(window).resize(function(){
-	// 	showinfo();
-	// })	
+	
 	showinfo();
 	showText('#spacer p', about, 0, 75, showWarmth)
 

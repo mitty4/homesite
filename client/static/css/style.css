@@ -4,7 +4,9 @@
 }
 body{
 	background-color: #dcdcdc;
-	font-family: courier, arial, georgia;
+	font-family: courier, arial, georgia;	
+	max-width:1500px;
+	margin:0 auto;
 }
 #header{
 	padding-bottom: 0;
@@ -23,7 +25,6 @@ body{
 	-webkit-text-stroke: 3px #edeeed;
 	padding-top: 8%;
 	margin-left: 10px;
-	/*text-align: left;*/
 	font-size: 2em;
 	padding-bottom: 40px;
 }
@@ -31,7 +32,7 @@ body{
 	-webkit-text-stroke: 0;
 }
 .top{
-	width: 100%;
+	width: auto;
 	height: 120px;
 }
 .float_right{
@@ -39,6 +40,7 @@ body{
 	width: 100%; 
 	background-color: #000;
 	height: 60px;
+	max-width:1500px;
 }
 #links{
 	text-align: right;
@@ -119,12 +121,6 @@ body{
 #personal_info p, #education_info p, #aspirations_info p{
 	padding-bottom: 20px;
 }
-/*#personal_info h3, #education_info h3, #aspirations_info h3{
-	color: #2935b5;
-	padding-bottom: 30px;
-	text-align:center;
-	font-family: courier,Georgia,serif;
-}*/
 .skillset{
 	color: #23a4b2;
 }
@@ -199,7 +195,6 @@ body{
 	background-image: url('../images/data-facev1.jpg');
 	background-size: 50%;
 }
-
 .left_title{ 
 	color: #2935b5; 
 	text-align: center;
@@ -231,9 +226,6 @@ body{
 	color: #ababab;
 	background-color: #434343;
 }
-
-
-
 
 @media screen and (max-width: 880px) and (min-width:540px){
 	#header{

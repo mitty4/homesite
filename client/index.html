@@ -6,117 +6,81 @@
 	<meta name="viewport" content="width=device-width">
 	<title>PORTFOLIO: ICY MIX</title>
 	<link rel="canonical" href="http://www.mitchelllabauve.com">
-	<link rel="stylesheet" type="text/css" href="./static/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/style2.css">
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
 	<script src="/jquery/jquery.js" type="text/javascript"></script>
-	<script src="./static/js/app.min.js" type="text/javascript"></script>
+	<script src="./static/js/colors.js" type="text/javascript"></script>
 </head>
 <body>
-	<div id="container"> 
+	<div class="container"> 
+	<!--HEADER-->
 		<div id="header">
-			<div class="top">
-				<div class="float_left">
-					<ul id="nav">
-						<li id="personal">PERSONAL</li>
-						<li id="education">EDUCATION</li>
-						<li id="aspirations">GOALS</li>
-					</ul>
-					<div id="triangle-topleft-1"></div>
-					<div id="triangle-topleft"></div>
-				</div>	
-				<div class="float_right">
-					<ul id="links">
-						<li class="right_nav python">PYTHON</li>
-						<li class="right_nav ruby">RUBY</li>
-						<li class="right_nav javascript">JAVASCRIPT</li>
-						<li><a href="https://www.linkedin.com/in/mitchell-labauve-6a1275123"><img width="40" src="./static/images/linkedin-round-blue.png" alt="Mitchell LaBauve's linkedin"></a></li>
-						<li><a href="https://github.com/mitty4"><img width="40" src="./static/images/github-round-blue.png" alt="Mitchell LaBauve's github"></a></li>
-					</ul>
-				</div>	
-			</div>	
-			<div id="title">
-				<h1><span class="title">Mitty</span><span class="title"> LABS</span></h1>
-				<h5 class="sub_title">Full-Stack Development</h5>
+			<div id="hidden">
+				<img id="github" width="300px" src="./static/images/planeGithub.png">
+				<img id="linkedin" width="300px" src="./static/images/planeLinkedin.png">
+				<img id="cloud" width="500px" src="./static/images/cloud.png">
 			</div>
-		</div>
-			<div id="spacer">
-				<p></p>
-				<div class="warmth large">
-					<a href="http://www.MitchellLaBauve.com/warmth">MitchellLaBauve.com/warmth</a>
+			<div id="bye">
+				<a href="https://www.linkedin.com/in/mitchell-labauve-6a1275123"><img src="./static/images/linkedin-round-red.png"></a>
+				<a href="https://github.com/mitty4"><img src="./static/images/github-round-red.png"></a>
+			</div>
+			<div class="colors">
+				<p>Customize me</p>
+				<div id="color_block">
+					<div id="red"></div>
+					<div id="purple"></div>
+					<div id="white"></div>
+					<div id="gray"></div>
+					<div id="blue"></div>
+				</div>
+				<input type="text" id="guest_title">
+				<input type="submit" value="go" id="guest_submit">
+			</div>
+			<div class="title">
+				<h1 id="title">I'm a Developer</h1>
+				<h5>... for User Experience</h5>
+				<p class="sub_title">&amp; I Love my Job</p>
+				<div id="spacer">
+					<img id="man" src="./static/images/manSkyDiving.png" alt="down arrow" width="15%">
 				</div>
 			</div>
-		<div id="videos">
-			<div id="python" class="video">
-				<div class="right">
-					<h2 class="left_title">Python Project</h2>
-					<iframe class="iframe" width="100%" height="292" src="https://www.youtube.com/embed/Cz13CJyJEHo" frameborder="0" allowfullscreen></iframe>
-				</div>	
-					
-				<div class="left">
-					<p class="p">Supported by <span class="skillset">Python</span> and <span class="skillset">Flask</span>, and decorated with <span class="skillset">Bootstrap</span>, "Grapevine" has a persisting session.<br /><br />GitHub has a copy of its <a href="https://github.com/mitty4/Python-Grapevine">code</a></p>
-				</div>	
+		</div>
+	<!--END HEADER-->
+		<div id="extras">
+			<button id="appear">Click Me</button>
+			<div id="skills">
+				<p id="skills0">Some other abilities include: </p>
+				<ul>
+					<li id="skills1">Design</li>
+					<li id="skills2">Back-End</li>
+					<li id="skills3">Front-End</li>
+					<li id="skills4">Databases</li>
+					<li id="skills5"id="fullS">Full-Stack Development!</li>
+				</ul>
 			</div>
-			<div id="ruby" class="video">
-				<div class="left">
-					<h2 class="left_title">Ruby on Rails</h2>
-					<iframe class="iframe" width="100%" height="292" src="https://www.youtube.com/embed/yKA-dZU-Ixw" frameborder="0" allowfullscreen></iframe>
-					
-				</div>	
-				<div class="right">
-				<p class="p">Written with <span class="skillset">Ruby on Rails</span>, <span class="skillset">Postgres</span> and <span class="skillset">Bootstrap</span>, "Groups" was completed in 5 hours. <br /><br />The Code is available <a href="https://github.com/mitty4/ROR-Organizations">here</a></p>
+		</div>
 
-				</div>	
-			</div>
-			<div id="mean" class="video">
-				
-				<div class="right">
-					<h2 class="left_title">MEAN Stack</h2>
-					<!-- <iframe class="iframe" width="100%" height="292" src="https://www.youtube.com/embed/BoC17KXXfsI" frameborder="0" allowfullscreen></iframe> -->
-					<img class="" src="./static/images/cone.png" alt="under construction" width="300" border="2px solid #333">
-				</div>	
-				<div class="left">
-					<p class="p">This project utilizes <span class="skillset">Node.js</span>, <span class="skillset">Express</span>, <span class="skillset">MongoDB</span> and <span class="skillset">Angular.js</span> to create a fully functioning MEAN stack.<br /><br />Browse the <a href="">code</a></p>
-				</div>	
-			</div>
+	<!-- VIDEOS -->
+		<div id="python" class="video">
+			<h2 class="left_title"><a href="https://github.com/mitty4/Python-Grapevine">Python Project</a></h2>
+			<iframe class="iframe" src="https://www.youtube.com/embed/3Mh-3C9obCM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="ruby" class="video">
+			<h2 class="left_title"><a href="https://github.com/mitty4">Ruby on Rails</a></h2>
+			<iframe class="iframe" src="https://www.youtube.com/embed/SX_cybwXgEM" frameborder="0" allowfullscreen></iframe>	
+		</div>
+		<div id="mean" class="video">
+			<h2 class="left_title"> <a href="https://github.com/mitty4">MEAN Stack</a></h2>
+			<!-- <iframe class="iframe" width="100%" height="292" src="https://www.youtube.com/embed/BoC17KXXfsI" frameborder="0" allowfullscreen></iframe> -->
+			<img class="" src="./static/images/cone.png" alt="under construction" width="300" border="2px solid #333">
 		</div>	
-			<div id="personal_info" >
-				<h2 class="left_title">ABOUT ME</h2>
-				<p>I identify as a <span class="skillset">perfectionist</span> who learned that <span class="skillset">practicality</span> and <span class="skillset">punctuality</span> are just as <span class="skillset">pertinent</span>. That being said, however, I can just as easily call myself a dreamer void of reason. I say this because I recognize that the common delusions of grandeur that roam my thoughts are not so common for others. Consequently, I will not settle for anything less than a legacy to leave behind on this earth. </p>
-				<p class="skillset">My playtime, my relationships, my work and anything that I do is backed by a love of life and a love for others... in a deep but platonic kind of way. My enemy is not others' dreams but the doubt that sprouts from within me.
-				</p>
-				<p>
-				Different people live different lives and, well, live for different reasons. I live for experience over living for objects. The reason being that knowledge is addicting, not to say that accumulating things isn't, but my knowledge informs me that objects are less engaging than the knowledge used to interact with objects. Thus, I choose the more rich in entertainment. </p>
-				<p class="skillset">My interest in experience, however, is just an interest and not a direct correlation to my intelligence. I'm just average with a hint of me, which I suppose is just like most people. I have to say I enjoy the view from atop this bell curve, it's quite holistic.  
-				</p>
-			</div>	
-			<div id="education_info">
-				<h2 class="left_title">EDUCATION</h2>
-				<p>Thus far in my life, I have shown my capacity for perserverance and commitment through earning a BS degree and have attained proof of attending a full-stack coding bootcamp put on by Coding Dojo. From my BS degree, I gave the most focus on learning the <span class="skillset">Psychology</span> of learning... or learning how to learn. This is a skill set valuable to any and every profession because of its adaptability to interacting with any subject and all people. 
-				The full-stack development basics that I have learned so far yield for me an understanding and a practical use of computer programming languages such as <span class="skillset">Python</span>, <span class="skillset">Ruby</span> and <span class="skillset">JavaScript</span>, database basics in <span class="skillset">MySQL</span> and <span class="skillset">MongoDB</span>, frontend techniques aptly used such as <span class="skillset">HTML</span>, <span class="skillset">CSS</span>, <span class="skillset">Bootstrap</span>, <span class="skillset">JQuery</span> and <span class="skillset">AngularJS</span>, and some other things listed in my Resumé.
-				</p>
-			</div>
-			<div id="aspirations_info">
-				<h2 class="left_title">GOALS</h2>
-				<p>
-				My professional goals are to master front-end and back-end techniques and to stay current on new softwares. I also plan to formally continue my education in mathematics and human computer interaction... but that's a few years off, hey, I'm only 21. Some of the immediate and long term pieces, respectively, for me to master are:</p>
-				<ul id="nowgoal" class="skillset">
-					<li>API</li>
-					<li>Bootstrap</li>
-					<li>Photoshop</li>
-					<li>SEO</li>
-					<li>DJango</li>
-				</ul>
-				<ul id="latergoal">
-					<li>Premiere Pro</li>
-					<li>Big O Notation</li>
-					<li>Security</li>
-					<li>Test Driven Development</li>
-					<li>Memory Management</li>
-				</ul>
-			</div>
 	</div>
+
+<!--FOOTER -->
 	<div id="footer">
-		<p>&copy; 2016 MittyLabs</p>
+		<p>View more work on: <a href="https://github.com/mitty4"> GitHub</a></p>
+		<p> Connect with me on:<a href="https://www.linkedin.com/in/mitchell-labauve-6a1275123"> LinkedIn</a></p>
+		<p>&copy; 2017 HowdyKindness</p>
 	</div>
 </body>
 </html>

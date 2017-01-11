@@ -16,7 +16,6 @@ body{
 	background-repeat: no-repeat;
 	background-position: 0 20px;
 	background-size: 100% auto;
-	border-bottom: 1px solid silver;
 	width: 100%;
 	height: 62vw;
 	overflow:hidden;
@@ -196,34 +195,44 @@ body{
 }
 
 @media (max-width: 600px){
+	#header{
+		border-bottom:none;
+	}
 	#hidden{
-		top:5%;
+		top:2%;
 	}
 	.colors{
 		position:static;
 		display:none;
 	}
 	#spacer{
-		padding-top:25px;
+		padding-top:8px;
 	}
 	#github{
-		width:150px;
-		height:135px;
+		width:130px;
+		height:115px;
 	}
 	#linkedin{
-		width:135px;
-		height:125px;
+		width:125px;
+		height:115px;
 		top:70px;
 		z-index:1;
 	}
 	#cloud{
-		width:120px;
-		height:105px;
-		top:150px;
+		width:110px;
+		height:95px;
+		top:130px;
 		z-index:1;
 	}	
+	.title{
+		font-size:5.5vw;
+	}
+	#appear{
+		font-size:.6em;
+		padding:3px 5px;
+	}
 	.left_title a, #appear{
-		font-size:.9em;	
+		font-size:.8em;	
 	}
 	.iframe{
 		max-width:400px;
